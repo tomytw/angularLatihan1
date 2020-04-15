@@ -29,8 +29,18 @@ export class AppComponent  {
       this.title = 'Pola B';
       this.pattern = [];
 
-      for(this.i = varB; this.i<=this.hasil + 1;this.i++){
+      // asumsi pola mulai dari inputan yang terbesar
+      var terbesar = 0;
+      if(varA >= varB){
+        terbesar = varA;
+      }
+      else{
+        terbesar = varB;
+      }
+
+      for(this.i = terbesar; this.i<this.hasil + 1;this.i++){
         this.newStr = ""
+
         for(this.j = 0;this.j<this.i;this.j++){
           this.newStr += "*"
         }
