@@ -1,0 +1,37 @@
+<!-- <hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p> -->
+
+<div>
+  Input 1 : 
+  <input [(ngModel)] = "varA" type="text">
+</div>
+
+<div>
+  Input 2 : 
+  <input [(ngModel)] = "varB" type="text">
+</div>
+
+<br>
+
+<button  (click)="hitung(varA,varB)">Hitung</button>
+
+<br>
+
+<div *ngIf="hasil">
+  {{hasil}}
+
+  <!-- untuk tampilkan pola -->
+  <div>
+    {{title}}
+  </div>
+
+  <div *ngFor="let row of pattern">
+    {{row}}
+  </div>
+</div>
+
+
+
+
