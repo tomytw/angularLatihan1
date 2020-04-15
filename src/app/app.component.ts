@@ -53,6 +53,13 @@ export class AppComponent  {
       this.pattern = [];
 
       this.maxVal = 0;
+
+      if(varA >= varB){
+        var temp = varA;
+        varA = varB;
+        varB = temp;
+      }
+
       if(varA >= varB){
         this.maxVal = varA;
       }
@@ -62,11 +69,12 @@ export class AppComponent  {
 
       this.i = 0;
       this.j = 0;
-
+      
       this.counterA = 1;
       this.counterB = varB;
       for(this.i = 0; this.i<this.maxVal ; this.i++){
         this.newStr = ''
+
         this.leftStr = ''
         this.rightStr = ''
 
