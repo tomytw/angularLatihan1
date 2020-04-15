@@ -18,15 +18,18 @@
 <button  (click)="hitung(varA,varB)">Hitung</button>
 
 <br>
+<br>
 
 <div *ngIf="hasil">
-  {{hasil}}
-
-  <!-- untuk tampilkan pola -->
-  <div>
-    {{title}}
-  </div>
-
+  Hasil : {{hasil}}
+</div>
+<br>
+ <!-- untuk tampilkan pola -->
+<div *ngIf="hasil">
+  {{title}}
+</div>
+<br>
+<div *ngIf="hasil">
   <div *ngFor="let row of pattern">
     {{row}}
   </div>
